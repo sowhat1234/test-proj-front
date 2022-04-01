@@ -1,0 +1,150 @@
+.gig-checkout-page {
+  display: flex;
+  // background-color: #f7f7f7;
+  flex-wrap: wrap;
+  padding: 3rem 0;
+  background-color: #f7f7f7;
+  @include for-mobile-layout {
+    justify-content: center;
+    align-items: center;
+    .gig-order-summary {
+      width: 100%;
+      .block-two {
+        width: 100%;
+        img {
+          width: 100%;
+          
+        }
+
+      }
+    }
+  }
+
+  .gig-order-preview {
+    display: flex;
+    height: 50%;
+    flex-wrap: wrap;
+    & section {
+      display: flex;
+      flex-direction: column;
+      & div {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+      }
+      .gig-rate {
+        display: flex;
+        flex-direction: row;
+
+        ul {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+.gig-order-summary {
+  height: fit-content;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.gig-checkout-summary {
+  border: 1px solid #dddddd;
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+  width: 18.75rem;
+  padding: 1rem 1.5rem;
+  background-color: #fff;
+  .title {
+    margin-bottom: 1rem;
+    font-family: macan-bold;
+  }
+
+  & ul {
+    flex: 1;
+  }
+  & li {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    border-bottom: 1px solid #dddddd;
+    & p {
+      font-family: macan-regular;
+    }
+  }
+
+  & button {
+    padding: 12px 24px;
+    margin-top: 1rem;
+    background-color: #1dbf73;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    &:hover {
+      background-color: #3fca89;
+    }
+  }
+}
+
+.gig-order-details {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 50%;
+  padding-top: 1rem;
+
+  .details-title {
+    margin-bottom: 1rem;
+  }
+  .gig-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40%;
+    li {
+      display: flex;
+      align-items: center;
+      width: 30rem;
+      & * {
+        margin-inline-end: 1rem;
+      }
+    }
+  }
+}
+
+.gig-order-preview .block-one {
+  padding: 1rem;
+  h1 {
+    margin-bottom: 1rem;
+    font-family: macan-bold;
+  }
+
+  h3 {
+    margin-top: 1rem;
+  }
+  & p {
+    font-size: 16px;
+  }
+}
+
+.gig-order-preview .block-two {
+  width: 30%;
+  height: 30%;
+  padding: 0 1rem;
+
+  & img {
+    object-fit: cover;
+    width: 14rem;
+    height: 8rem;
+    aspect-ratio: 200/330;
+  }
+}
+
+.block-one .gig-rate > * {
+  margin-inline-end: 1rem;
+}
